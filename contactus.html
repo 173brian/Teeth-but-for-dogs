@@ -1,5 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+  .container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: 500px;
+    width: 50%;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+    grid-column: 1;
+    grid-row: 1;
+    object-fit: contain;
+    z-index: -1;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 617px;
+    width: 500px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+
+  .container:hover .overlay {
+    opacity: 1;
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  header
+  {
+    top: 0px;
+    position:fixed;
+  }
+  h2
+  {
+    margin-top: 100px;
+  }
+</style>
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +62,7 @@
   <title>Teeth, but for Dogs Home</title>
   <link rel="stylesheet" href="Styles/style.css">
 </head>
+
 <body>
 <div id="content">
   <header>
@@ -21,6 +77,14 @@
     </nav>
   </header>
   <main class="feedback">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <h2>Contact us below!</h2>
+    <div class="container">
+      <img src="Images/Betsy1.png" alt="Betsy" class="image">
+      <div class="overlay">
+        <div class="text">You can't.</div>
+      </div>
+    </div>
   </main>
 </div>
 <footer>
