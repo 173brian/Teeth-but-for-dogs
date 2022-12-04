@@ -4,7 +4,9 @@
     max-width: 1600px;
     margin: 0 auto;
 }
-
+#home {
+    margin: 0 auto;
+}
 nav a {
     text-align: center;
     color: #2f2f2f;
@@ -23,6 +25,8 @@ body {
 }
 header {
     background-color: #336384;
+    top: 0;
+    left: 10%;
     display: flex;
     width: 80%;
     height: 100px;
@@ -33,12 +37,17 @@ header {
 footer{
     background-color: #e7c04b;
     padding: 25px 50px;
+    bottom: 0px;
     margin-top: 200px;
+    margin-left: 7.5%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    width: 80%;
+    position: relative;
 }
 .scrollable-content {
+    margin-top: 200px;
     display: grid;
     grid-template-columns: 30% 70%;
     grid-template-rows: auto;
@@ -48,13 +57,10 @@ footer{
     width: 100px;
     object-fit: contain;
 }
-#dgimg {
-    margin: auto 270px;
-    position: relative;
+.dgimg {
     height: 500px;
     width: 500px;
     object-fit: contain;
-    z-index: -1;
 }
 .Dog1 {
     height: 500px;
@@ -73,23 +79,26 @@ footer{
     margin: auto 270px;
 }
 .attilla{
+    margin-left: 10%;
+    margin-top: 10%;
     height: 500px;
     width: 500px;
     object-fit: contain;
 }
 #attilla {
-    margin: 200px auto;
     grid-column: 1;
     position: fixed;
     z-index: -1;
 }
 #intro, #information, #rates, #community {
     grid-column: 2;
-    margin: 25px;
+    margin-left: 10%;
+    margin-top: 25px;
+    margin-bottom: 25px;
     border: 5px solid #2f2f2f;
 }
 .home-grid {
-    margin-left: 150px;
+    margin-left: 0%;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 4fr;
@@ -156,7 +165,8 @@ h5 {
     text-align: center;
 }
 .info-grid {
-    margin-left: 150px;
+    margin-left: 5%;
+    margin-right: 5%;
     display: grid;
     grid-template-columns: 3fr;
     grid-template-rows: 3fr;
@@ -209,9 +219,16 @@ h5 {
     object-fit: contain;
 }
 .info-community, .info-rates {
+    width: 50%;
+    margin-left: 25%;
     text-align: center;
     border: 5px solid #2f2f2f;
-    margin: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
-
-
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Nabla", Helvetica, SansSerif;
+}
+p {
+    font-family: SansSerif;
+}
