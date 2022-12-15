@@ -17,8 +17,12 @@ main section{
     text-align: center;
 }
 body {
+    /*background-size: contain;*/
+    background-image: url(https://wallpapercave.com/wp/wp3808926.jpg);
     background-size: cover;
-    background: no-repeat fixed center linear-gradient(335deg, rgb(144, 144, 144) 0%, rgb(255, 255, 255) 100%);    font-family: Helvetica, "Nabla", sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    font-family: Helvetica, "Nabla", sans-serif;
     font-size: 22px;
     margin: 0;
     padding: 0;
@@ -39,7 +43,7 @@ footer{
     padding: 25px 50px;
     bottom: 0px;
     margin-top: 200px;
-    margin-left: 7.5%;
+    margin-left: 7.25%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -55,27 +59,27 @@ footer{
 .logo {
     height: 100px;
     width: 100px;
-    object-fit: contain;
+    object-fit: fill;
 }
 .dgimg {
     height: 500px;
     width: 500px;
-    object-fit: contain;
+    object-fit: fill;
 }
 .Dog1 {
     height: 500px;
     width: 500px;
-    object-fit: contain;
+    object-fit: fill;
 }
 .Dog2 {
     height: 500px;
     width: 500px;
-    object-fit: contain;
+    object-fit: fill;
 }
 .Dog3 {
     height: 500px;
     width: 500px;
-    object-fit: contain;
+    object-fit: fill;
     margin: auto 270px;
 }
 .attilla{
@@ -83,7 +87,7 @@ footer{
     margin-top: 10%;
     height: 500px;
     width: 500px;
-    object-fit: contain;
+    object-fit: fill;
 }
 #attilla {
     grid-column: 1;
@@ -91,6 +95,7 @@ footer{
     z-index: -1;
 }
 #intro, #information, #rates, #community {
+    background-color: #ffd7d4; 
     grid-column: 2;
     margin-left: 10%;
     margin-top: 25px;
@@ -100,6 +105,7 @@ footer{
 .home-grid {
     margin-left: 0%;
     display: grid;
+    grid-gap: 15px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 4fr;
 }
@@ -113,16 +119,18 @@ footer{
     grid-row: 2;
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: fill;
 }
 .cc1 {
+    background-color: #ffd7d4; 
+    padding: 15px;
     margin-left: 20%;
     align-self: center;
     grid-column: 2;
     grid-row: 2;
     height: 50%;
     width: 50%;
-    object-fit: contain;
+    object-fit: fill;
     border: 5px solid #2f2f2f;
 }
 .dg2 {
@@ -130,16 +138,18 @@ footer{
     grid-row: 3;
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: fill;
 }
 .cc2 {
+    padding: 15px;
+    background-color: #ffd7d4; 
     margin-left: 20%;
     align-self: center;
     grid-column: 1;
     grid-row: 3;
     height: 50%;
     width: 50%;
-    object-fit: contain;
+    object-fit: fill;
     border: 5px solid #2f2f2f;
 }
 .dg3 {
@@ -147,16 +157,18 @@ footer{
     grid-row: 4;
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: fill;
 }
 .cc3 {
+    padding: 15px;
+    background-color: #ffd7d4; 
     margin-left: 20%;
     align-self: center;
     grid-column: 2;
     grid-row: 4;
     height: 50%;
     width: 50%;
-    object-fit: contain;
+    object-fit: fill;
     border: 5px solid #2f2f2f;
 }
 h5 {
@@ -168,57 +180,73 @@ h5 {
     margin-left: 5%;
     margin-right: 5%;
     display: grid;
-    grid-template-columns: 3fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 3fr;
 }
 .info_header {
-    grid-column: 1/4;
+    grid-column: 1/5;
     grid-row: 1;
+    padding: 15px;
 }
 .grid1 {
     grid-column: 1/2;
     grid-row: 2;
     height: 300px;
     width: 300px;
-    object-fit: contain;
+    object-fit: cover;
 }
 .grid2 {
-    margin-right: 300px;
     grid-column: 2/3;
     grid-row: 2;
     height: 300px;
     width: 300px;
-    object-fit: contain;
+    object-fit: cover;
 }
 .grid3 {
     grid-column: 3/4;
     grid-row: 2;
     height: 300px;
     width: 300px;
-    object-fit: contain;
+    object-fit: cover;
 }
 .grid4 {
+    grid-column: 4/5;
+    grid-row: 2;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+.grid5 {
     grid-column: 1/2;
     grid-row: 3;
     height: 300px;
     width: 300px;
-    object-fit: contain;
+    object-fit: cover;
 }
-.grid5 {
+.grid6 {
     grid-column: 2/3;
     grid-row: 3;
     height: 300px;
     width: 300px;
-    object-fit: contain;
+    object-fit: cover;
 }
-.grid6 {
+.grid7 {
     grid-column: 3/4;
     grid-row: 3;
     height: 300px;
     width: 300px;
-    object-fit: contain;
+    object-fit: cover;
+}
+.grid8 {
+    grid-column: 4/5;
+    grid-row: 3;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
 }
 .info-community, .info-rates {
+    padding: 15px;
+    background-color: #ffd7d4; 
     width: 50%;
     margin-left: 25%;
     text-align: center;
@@ -227,8 +255,8 @@ h5 {
     margin-bottom: 5px;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Nabla", Helvetica, SansSerif;
+    font-family: "Nabla", Helvetica, sans-serif;
 }
 p {
-    font-family: SansSerif;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
